@@ -13,6 +13,7 @@
 		C9A83E552C140ED300C23A79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9A83E542C140ED300C23A79 /* Base */; };
 		C9A83E572C140ED500C23A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A83E562C140ED500C23A79 /* Assets.xcassets */; };
 		C9A83E5A2C140ED500C23A79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9A83E592C140ED500C23A79 /* Base */; };
+		C9C662F02C144AE300C99FCA /* UserRequestKit in Frameworks */ = {isa = PBXBuildFile; productRef = C9C662EF2C144AE300C99FCA /* UserRequestKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,17 +32,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C662F02C144AE300C99FCA /* UserRequestKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C959EF542C1424D400714D3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9A83E412C140ED300C23A79 = {
 			isa = PBXGroup;
 			children = (
 				C9A83E4C2C140ED300C23A79 /* DemoAppWithPackage */,
 				C9A83E4B2C140ED300C23A79 /* Products */,
+				C959EF542C1424D400714D3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = DemoAppWithPackage;
+			packageProductDependencies = (
+				C9C662EF2C144AE300C99FCA /* UserRequestKit */,
+			);
 			productName = DemoAppWithPackage;
 			productReference = C9A83E4A2C140ED300C23A79 /* DemoAppWithPackage.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = C9A83E412C140ED300C23A79;
+			packageReferences = (
+				C9C662EE2C144AE300C99FCA /* XCRemoteSwiftPackageReference "UserRequestKit" */,
+			);
 			productRefGroup = C9A83E4B2C140ED300C23A79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9C662EE2C144AE300C99FCA /* XCRemoteSwiftPackageReference "UserRequestKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vishalk386/UserRequestKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9C662EF2C144AE300C99FCA /* UserRequestKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9C662EE2C144AE300C99FCA /* XCRemoteSwiftPackageReference "UserRequestKit" */;
+			productName = UserRequestKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9A83E422C140ED300C23A79 /* Project object */;
 }

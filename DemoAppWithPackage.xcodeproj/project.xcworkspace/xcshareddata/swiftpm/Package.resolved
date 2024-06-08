@@ -1,0 +1,24 @@
+{
+  "originHash" : "fc8341c9ab40fb5e011bf5095d55518e837414977dbaf023fe88c1ff1cf10aa7",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
+        "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "userrequestkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vishalk386/UserRequestKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fd870d008c26b7c6c35c18f6fb83852061c0ef95"
+      }
+    }
+  ],
+  "version" : 3
+}
